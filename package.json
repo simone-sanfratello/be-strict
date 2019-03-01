@@ -1,0 +1,34 @@
+{
+  "name": "be-strict",
+  "version": "1.0.1",
+  "devDependencies": {
+    "standard": "^12.0.1",
+    "tap": "^12.5.3"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "scripts": {
+    "test": "standard && tap test/*-*.js",
+    "test-cov": "standard && tap test/* --cov"
+  },
+  "description": "add 'use strict' on the top of js files",
+  "main": "main.js",
+  "files": [
+    "src/",
+    "settings/"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
+  "author": "Simone Sanfratello <simone@braceslab.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simone-sanfratello/be-strict.git"
+  },
+  "keywords": [
+    "strict",
+    "strict mode"
+  ]
+}
