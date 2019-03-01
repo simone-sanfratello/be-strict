@@ -40,8 +40,15 @@ stricted 4 files
 
 ### Options
 
---ignore
+```bash
+$ be-strict --help
 
+Usage: be-strict [options]
+
+Options:
+  -i, --ignore [.git,node_modules]  ignore dirs, default is .git and node_modules
+  -h, --help                        output usage information
+```
 
 ## Reference
 
