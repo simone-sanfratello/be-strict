@@ -1,10 +1,12 @@
 # dirs
 /.vscode/
+/.nyc_output/
 /dist/
 /log/
 /pid/
 /node_modules/
 /coverage/
+/test/sample/repo
 
 # logs
 *.log

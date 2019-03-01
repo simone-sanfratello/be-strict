@@ -15,11 +15,33 @@ npm i -g be-strict
 ### Quick start
 
 ```bash
-cd /my-project
-be-strict
+$ cd /my-project
+$ be-strict
 ```
 
-... log
+```
+skipped 3 files
+[
+  '/home/simone/dev/my-project/example/basic.js',
+  '/home/simone/dev/my-project/lib/utils.js',
+  '/home/simone/dev/my-project/settings/env.js'
+]
+
+---
+
+stricted 4 files
+[ '/home/simone/dev/my-project/main.js',
+  '/home/simone/dev/my-project/example/app.js',
+  '/home/simone/dev/my-project/example/settings/production.js'
+]
+
+     well done! this project 'use strict' a lot!
+```
+
+### Options
+
+--ignore
+
 
 ## Reference
 

@@ -5,19 +5,16 @@
     "standard": "^12.0.1",
     "tap": "^12.5.3"
   },
-  "pre-commit": [
-    "test"
+  "files": [
+    "bin/*",
+    "lib/*"
   ],
   "scripts": {
-    "test": "standard && tap test/*-*.js",
-    "test-cov": "standard && tap test/* --cov"
+    "test": "standard && tap test/basic.js",
+    "test-coverage": "standard && tap test/basic.js --cov"
   },
   "description": "add 'use strict' on the top of js files",
   "main": "main.js",
-  "files": [
-    "src/",
-    "settings/"
-  ],
   "engines": {
     "node": ">= 10"
   },
@@ -27,8 +24,14 @@
     "type": "git",
     "url": "git+https://github.com/simone-sanfratello/be-strict.git"
   },
+  "bin": {
+    "be-strict": "bin/main.js"
+  },
   "keywords": [
     "strict",
     "strict mode"
-  ]
+  ],
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
 }
