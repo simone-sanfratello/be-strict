@@ -19,5 +19,5 @@ program
   lib.log.info(_report.done)
   lib.log.info('\n---\n')
 
-  lib.log.info('\n     well done! this project \'use strict\' a lot!\n\n')
+  lib.log.info('\n     well done! this project is \'strict\'!\n\n')
 })()
