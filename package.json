@@ -13,7 +13,7 @@
     "test": "standard && tap test/basic.js",
     "test-coverage": "standard && tap test/basic.js --cov"
   },
-  "description": "add 'use strict' on the top of js files",
+  "description": "add 'use strict' on the top of js files, if missing",
   "main": "main.js",
   "engines": {
     "node": ">= 10"

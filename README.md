@@ -4,7 +4,7 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/be-strict.svg?style=flat)](https://www.npmjs.org/package/be-strict)
 [![JS Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-be strict: add 'use strict' on the top of js files
+be strict: add 'use strict' on the top of js files if missing
 
 ## Installing
 
@@ -49,10 +49,6 @@ Options:
   -i, --ignore [.git,node_modules]  ignore dirs, default is .git and node_modules
   -h, --help                        output usage information
 ```
-
-## Reference
-
-https://twitter.com/matteocollina/status/1100468412701126656
 
 ---
 
