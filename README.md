@@ -35,7 +35,7 @@ stricted 4 files
   '/home/simone/dev/my-project/example/settings/production.js'
 ]
 
-     well done! this project 'use strict' a lot!
+     well done! this project is 'strict'!
 ```
 
 ### Options

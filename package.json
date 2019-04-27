@@ -1,9 +1,9 @@
 {
   "name": "be-strict",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "devDependencies": {
     "standard": "^12.0.1",
-    "tap": "^12.5.3"
+    "tap": "^13.0.3"
   },
   "files": [
     "bin/*",
@@ -32,6 +32,6 @@
     "strict mode"
   ],
   "dependencies": {
-    "commander": "^2.19.0"
+    "commander": "^2.20.0"
   }
 }
