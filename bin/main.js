@@ -22,9 +22,6 @@ yargs(hideBin(process.argv))
   .argv
 
 ;(async () => {
-  console.log('path', argv.path)
-  console.log('ignore', argv.ignore)
-
   const _report = await lib.run(argv.path || process.cwd(), argv.ignore ? argv.ignore.split(',') : undefined)
   lib.log.info('\n---\n')
   lib.log.info('skipped', _report.skipped.length, 'files - already stricted')

@@ -43,11 +43,12 @@ stricted 4 files
 ```bash
 $ be-strict --help
 
-Usage: be-strict [options]
-
 Options:
-  -i, --ignore [.git,node_modules]  ignore dirs, default is .git and node_modules
-  -h, --help                        output usage information
+      --help     Show help                                             [boolean]
+      --version  Show version number                                   [boolean]
+  -i, --ignore   ignore dirs, default is .git and node_modules
+                                         [string] [default: ".git,node_modules"]
+  -p, --path     repo path to apply strictness - default cwd            [string]
 ```
 
 ---
