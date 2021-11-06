@@ -2,15 +2,30 @@
 
 'use strict'
 
-const program = require('commander')
+const yargs = require('yargs/yargs')
 const lib = require('../lib')
 
-program
-  .option('-i, --ignore [.git,node_modules]', 'ignore dirs, default is .git and node_modules')
-  .parse(process.argv)
+const { hideBin } = require('yargs/helpers')
+const argv =
+yargs(hideBin(process.argv))
+  .option('ignore', {
+    alias: 'i',
+    type: 'string',
+    description: 'ignore dirs, default is .git and node_modules',
+    default: '.git,node_modules'
+  })
+  .option('path', {
+    alias: 'p',
+    type: 'string',
+    description: 'repo path to apply strictness - default cwd'
+  })
+  .argv
 
 ;(async () => {
-  const _report = await lib.run(process.cwd(), program.ignore ? program.ignore.split(',') : undefined)
+  console.log('path', argv.path)
+  console.log('ignore', argv.ignore)
+
+  const _report = await lib.run(argv.path || process.cwd(), argv.ignore ? argv.ignore.split(',') : undefined)
   lib.log.info('\n---\n')
   lib.log.info('skipped', _report.skipped.length, 'files - already stricted')
   lib.log.info(_report.skipped)
